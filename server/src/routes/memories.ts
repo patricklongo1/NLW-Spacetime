@@ -47,6 +47,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
   })
 
   app.post('/memories', async (request) => {
+    console.log('entremo')
     const bodySchema = z.object({
       content: z.string(),
       coverUrl: z.string(),
