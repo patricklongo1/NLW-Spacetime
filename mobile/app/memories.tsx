@@ -62,7 +62,7 @@ export default function NewMemory() {
       className="flex-1"
       contentContainerStyle={{ paddingBottom: bottom, paddingTop: top }}
     >
-      <View className="mt-4 flex-row items-center justify-between">
+      <View className="mt-4 flex-row items-center justify-between px-8">
         <NLWLogo />
         <View className="flex-row gap-2">
           <Link href="/new" asChild>
