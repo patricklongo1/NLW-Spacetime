@@ -42,7 +42,7 @@ export default function NewMemory() {
   async function handleCreateMemory() {
     const token = await SecureStore.getItemAsync('token')
 
-    let converUrl = ''
+    let coverUrl = ''
 
     if (preview) {
       const uploadFormData = new FormData()
@@ -59,9 +59,9 @@ export default function NewMemory() {
         },
       })
 
-      converUrl = uploadResponse.data.fileUrl
+      coverUrl = uploadResponse.data.fileUrl
 
-      console.log(converUrl)
+      console.log(coverUrl)
     }
 
     await api.post(
@@ -69,7 +69,7 @@ export default function NewMemory() {
       {
         content,
         isPublic,
-        converUrl,
+        coverUrl,
       },
       {
         headers: {
